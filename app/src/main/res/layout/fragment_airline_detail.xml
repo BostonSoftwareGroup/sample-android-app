@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.AirlineDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/detail_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/airline_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/airline_detail_margin"
+            android:text="@string/airline_detail_title"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/airline_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/airline_detail_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/airline_logo_imageview"
+                android:layout_width="@dimen/detail_image_size"
+                android:layout_height="@dimen/detail_image_size" />
+
+            <TextView
+                android:id="@+id/airline_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_text_margin"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/airline_site_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_item_top_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/airline_site_imageview"
+                android:layout_width="@dimen/detail_image_size"
+                android:layout_height="@dimen/detail_image_size"
+                android:src="@drawable/ic_web_asset_black"
+                android:tint="@color/colorLightGray" />
+
+            <TextView
+                android:id="@+id/airline_site_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/airline_phone_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_item_top_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/airline_phone_imageview"
+                android:layout_width="@dimen/detail_image_size"
+                android:layout_height="@dimen/detail_image_size"
+                android:src="@drawable/ic_phone_black"
+                android:tint="@color/colorLightGray" />
+
+            <TextView
+                android:id="@+id/airline_phone_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_text_margin"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favourite_mark_floatbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/float_button_margin"
+        android:layout_marginRight="@dimen/float_button_margin"
+        android:src="@drawable/ic_turned_in_not_black"
+        android:tint="@color/colorOrange"
+        app:backgroundTint="@color/colorWhite"
+        app:fabSize="normal" />
+</RelativeLayout>

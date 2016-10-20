@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">airline-android</string>
+    <string name="airline_detail_title">General</string>
+    <string name="allairline_tab_name">All Airlines</string>
+    <string name="favourite_tab_name">Favourite Airlines</string>
+    <string name="null_favourite_list">Your favourite Airline list is empty.</string>
+    <string name="add_toast_string">Added \" %1$s \" to your favourite list.</string>
+    <string name="remove_toast_string">Removed \" %1$s \" from your favourite list.</string>
+</resources>
